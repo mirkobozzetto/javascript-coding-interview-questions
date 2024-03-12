@@ -18,9 +18,9 @@ function maxChar(str) {
   }
   console.log(charMap);
 
-  for (const [key, value] of Object.entries(charMap)) {
-    if (value > max) {
-      max = value;
+  for (let key in charMap) {
+    if (charMap[key] > max) {
+      max = charMap[key];
       maxChar = key;
     }
   }
