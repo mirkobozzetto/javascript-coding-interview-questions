@@ -9,11 +9,14 @@
 //   palindrome("codingmoney") === false
 
 function palindrome(str) {
-  if (str === str.split("").reverse().join("")) {
-    return true;
-  } else {
-    return false;
-  }
+  const inv = str.split("").reverse().join("");
+  return str === inv;
+  //  * or ...
+  // if (str === str.split("").reverse().join("")) {
+  //   return true;
+  // } else {
+  //   return false;
+  // }
 }
 
 console.log(palindrome("kayak"));
