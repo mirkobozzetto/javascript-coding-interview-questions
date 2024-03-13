@@ -10,6 +10,8 @@ https://www.youtube.com/watch?v=ufBbWIyKY2E&t=602s
 
 ---
 
-logic of => 8-steps-string-pattern.js
+logic of what I want in
+
+8-steps-string-pattern.js
 
 ![alt text](image.png)
