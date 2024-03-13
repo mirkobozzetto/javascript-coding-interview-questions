@@ -7,3 +7,9 @@ This repo has been created in support for the Coding Money tutorial videos on yo
 Top 10 Javascript Algorithms to Prepare for Coding Interviews
 
 https://www.youtube.com/watch?v=ufBbWIyKY2E&t=602s
+
+---
+
+logic of => 8-steps-string-pattern.js
+
+![alt text](image.png)

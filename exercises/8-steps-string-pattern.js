@@ -17,6 +17,26 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+function steps(n) {
+  for (let row = 1; row <= n; row++) {
+    let line = "";
+    for (let col = 1; col <= n; col++) {
+      if (col <= row) {
+        line += "#";
+      } else {
+        line += " ";
+      }
+    }
+    console.log(line);
+  }
+}
 
-steps(3)
+// function steps(n) {
+//   for (let i = 1; i <= n; i++) {
+//     const line = "#".repeat(i) + " ".repeat(n - i);
+//     console.log(line);
+//   }
+// }
+
+// console.log(steps(3));
+steps(3);
