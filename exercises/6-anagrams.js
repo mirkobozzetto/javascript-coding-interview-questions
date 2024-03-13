@@ -10,14 +10,14 @@
 
 function anagrams(stringA, stringB) {
   stringA = stringA
-    .replace(/[^a-zA-Z\s]/g, "")
+    .replace(/[\W]/g, "")
     .toLowerCase()
     .split("")
     .sort()
     .join("");
   stringB = stringB
-    .replace(/[^a-zA-Z\s]/g, "")
-    .toLowerCase()
+    .replace(/[\W]/g, "")
+    .toLowerCase()s
     .split("")
     .sort()
     .join("");
@@ -25,6 +25,6 @@ function anagrams(stringA, stringB) {
   return stringA === stringB;
 }
 
-// console.log(anagrams("coding money", "money coding"));
-// console.log(anagrams("RAIL! SAFETY!", "fairy tales"));
-// console.log(anagrams("Hi there", "Bye there"));
+console.log(anagrams("coding money", "money coding"));
+console.log(anagrams("RAIL! SAFETY!", "fairy tales"));
+console.log(anagrams("Hi there", "Bye there"));
