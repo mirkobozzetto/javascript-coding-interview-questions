@@ -25,4 +25,6 @@ function anagrams(stringA, stringB) {
   return stringA === stringB;
 }
 
-console.log(anagrams("coding money", "money coding"));
+// console.log(anagrams("coding money", "money coding"));
+// console.log(anagrams("RAIL! SAFETY!", "fairy tales"));
+// console.log(anagrams("Hi there", "Bye there"));
