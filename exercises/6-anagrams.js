@@ -8,21 +8,12 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-function anagrams(stringA, stringB) {
-  stringA = stringA
-    .replace(/[\W]/g, "")
-    .toLowerCase()
-    .split("")
-    .sort()
-    .join("");
-  stringB = stringB
-    .replace(/[\W]/g, "")
-    .toLowerCase()s
-    .split("")
-    .sort()
-    .join("");
+function cleanString(str) {
+  return str.replace(/[\W]/g, "").toLowerCase().split("").sort().join("");
+}
 
-  return stringA === stringB;
+function anagrams(stringA, stringB) {
+  return cleanString(stringA) === cleanString(stringB);
 }
 
 console.log(anagrams("coding money", "money coding"));
