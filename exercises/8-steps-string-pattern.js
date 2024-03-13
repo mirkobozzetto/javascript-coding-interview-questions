@@ -31,6 +31,7 @@ function steps(n) {
   }
 }
 
+// & sinon !
 // function steps(n) {
 //   for (let i = 1; i <= n; i++) {
 //     const line = "#".repeat(i) + " ".repeat(n - i);
