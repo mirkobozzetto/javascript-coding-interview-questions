@@ -15,3 +15,7 @@ logic of what I want in
 8-steps-string-pattern.js
 
 ![alt text](image.png)
+
+the logic of the pyramid
+
+![alt text](image-1.png)
