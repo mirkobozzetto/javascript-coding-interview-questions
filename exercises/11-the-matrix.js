@@ -27,15 +27,39 @@ function matrix(n) {
   for (let i = 0; i < n; i++) {
     result.push([]);
   }
-  // top
-  for (i = startCol; i <= endCol; i++) {
-    result[startRow][i] = counter;
+  while (startRow <= endRow && startCol <= endCol) {
+    // top 1
+    for (i = startCol; i <= endCol; i++) {
+      result[startRow][i] = counter;
+      counter++;
+    }
+    startRow++;
+
+    // right 2
+    for (i = startRow; i <= endRow; i++) {
+      result[i][endCol] = counter;
+      counter++;
+    }
+    endCol--;
+
+    // bottom 3
+    for (i = endCol; i >= startCol; i--) {
+      result[endRow][i] = counter;
+      counter++;
+    }
+    endRow--;
+
+    // left 4
+    for (i = endRow; i >= startRow; i--) {
+      result[i][startCol] = counter;
+      counter++;
+    }
+    startCol++;
+
+    //
   }
-  // right
 
-  // bottom
-
-  // left
+  //
   return result;
 }
 
