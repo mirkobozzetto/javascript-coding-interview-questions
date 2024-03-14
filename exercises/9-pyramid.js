@@ -15,11 +15,19 @@
 //       '#####'
 
 function pyramid(n) {
-  for (let row = 0; row < n; row++) {
+  const mid = n;
+  for (let row = 1; row <= n; row++) {
     let line = "";
-    const mid = Math.floor((2 * n - 1) / 2);
-    for (let col = 0; col < 2 * n - 1; col++) {
-      if (col >= mid - row && col <= mid + row) {
+    for (let col = 1; col <= 2 * n; col++) {
+      // le for ici ajoute 2 colonnes de plus a chaque ligne s'il y a plus que 1 ligne a chaque ligne de plus
+      // le combre de colonnes et de lignes sera pris en compte pour le nombre de colonnes a chaque ligne
+      if (col >= mid - row + 1 && col <= mid + row - 1) {
+        /*
+        La condition col >= mid - row + 1 vérifie si vous avez dépassé le début de la partie de la ligne où le symbole doit être affiché. C'est-à-dire que vous êtes à droite du début de la partie de la ligne où le symbole doit être affiché.
+        La condition col <= mid + row - 1 vérifie si vous n'avez pas encore atteint la fin de la partie de la ligne
+        où le symbole doit être affiché
+        C'est-à-dire que vous êtes à gauche de la fin de la partie de la ligne où le symbole doit être affiché.
+        */
         line += "#";
       } else {
         line += " ";
@@ -29,4 +37,4 @@ function pyramid(n) {
   }
 }
 
-pyramid(3);
+pyramid(7);
